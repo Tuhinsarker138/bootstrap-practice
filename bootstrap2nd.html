@@ -11,6 +11,11 @@
         h1{
             margin-top: 50px;
         }
+        #flex-container{
+          width: 50%;
+          height: 300px;
+          background-color: cadetblue;
+        }
     </style>
 </head>
 <body>
@@ -23,19 +28,72 @@
     </nav>
     
     <!-- <h1>using ul in nav</h1> -->
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <ul class="nav ">
+        <li class="nav-item bg-dark ">
+          <a class="nav-link active text-white" aria-current="page" href="#">Active</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item bg-secondary ">
+          <a class="nav-link text-white" href="#">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item bg-success">
+          <a class="nav-link text-white" href="#">Link</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+        <li class="nav-item bg-warning ">
+          <a class="nav-link disabled text-white">Disabled</a>
         </li>
       </ul>
+      
+      <div class="container">
+        <h1>Grid</h1>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-secondary text-white">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi qui rem recusandae reiciendis voluptates voluptatum quaerat minima eius atque, reprehenderit vitae quis totam molestiae odio ut et laudantium! Eius sit architecto aspernatur pariatur temporibus voluptas nesciunt porro eos, ipsum, deserunt consectetur fugit. Accusamus quis est hic consequuntur dicta aliquam!</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  bg-success text-white">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi qui rem recusandae reiciendis voluptates voluptatum quaerat minima eius atque, reprehenderit vitae quis totam molestiae odio ut et laudantium! Eius sit architecto aspernatur pariatur temporibus voluptas nesciunt porro eos, ipsum, deserunt consectetur fugit. Accusamus quis est hic consequuntur dicta aliquam!</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-danger text-white">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi qui rem recusandae reiciendis voluptates voluptatum quaerat minima eius atque, reprehenderit vitae quis totam molestiae odio ut et laudantium! Eius sit architecto aspernatur pariatur temporibus voluptas nesciunt porro eos, ipsum, deserunt consectetur fugit. Accusamus quis est hic consequuntur dicta aliquam!</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  bg-warning text-white">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi qui rem recusandae reiciendis voluptates voluptatum quaerat minima eius atque, reprehenderit vitae quis totam molestiae odio ut et laudantium! Eius sit architecto aspernatur pariatur temporibus voluptas nesciunt porro eos, ipsum, deserunt consectetur fugit. Accusamus quis est hic consequuntur dicta aliquam!</p>
+          </div>
+        </div>
+      </div>
+      <h1>Carousel</h1>
+      <div class="container ">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/lehenga.jpg " class="d-block w-25 " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/mastani.jpg" class="d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img  src="images/sarees.jpg" class="d-block w-25" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     <div class="container">
+      <h1>Flex Layout</h1>
+      <div id="flex-container" class="d-flex align-items-center justify-content-evenly">
+        <div class="bg-success text-white">Shabana</div>
+        <div class="bg-secondary text-white">Shabnoor</div>
+        <div class="bg-warning text-white">Shuchita Shen</div>
+      </div>
+     </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
